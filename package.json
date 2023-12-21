@@ -7,9 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "server:dev": "node server.js",
-    "node-dev": "node server/server.js",
-    "node-start": "node server/server.js"
+    "server:dev": "nodemon server.js"
   },
   "dependencies": {
     "compression": "^1.7.4",
