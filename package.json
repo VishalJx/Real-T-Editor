@@ -5,9 +5,10 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "npm install && npm run build && npm run server:prod",
     "lint": "next lint",
-    "server:dev": "node index.js"
+    "server:dev": "nodemon index.js",
+    "server:prod": "node index.js"
   },
   "dependencies": {
     "compression": "^1.7.4",
