@@ -13,7 +13,7 @@ export default function Form() {
     const [username, setUsername] = useState('');
 
 
-    /**CREATE NEW ROOM */
+    /*CREATE NEW ROOM */
     const createNewRoom = (e) => {
         e.preventDefault();
         const newRoomId = uuidv4();
@@ -23,7 +23,7 @@ export default function Form() {
 
     }
 
-    /**JOIN ROOM */
+    /*JOIN ROOM */
     const joinRoom = (e) => {
         e.preventDefault();
         if(roomId === '' || username === ''){

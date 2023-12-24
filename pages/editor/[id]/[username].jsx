@@ -1,4 +1,4 @@
-// import Navbar from "@/components/Navbar"; //future purposes
+// import Navbar from "@/components/Navbar" //future purposes
 'use client'
 
 import 'react-toastify/dist/ReactToastify.css';
@@ -19,7 +19,7 @@ export default function editor() {
 
     const selectedColor = '#ff0000';
 
-    /**----------Socket.io------------- */
+    /*----------Socket.io------------- */
     const socketRef = useRef(null); //after changing state the component do not re-renders
     const codeRef = useRef(null);
 
@@ -109,16 +109,6 @@ export default function editor() {
                                 flex flex-col gap-3 bg-secondary ">
                     <div className="flex flex-col gap-5 border-b border-gray-600 pb-2 px-3 py-3">
                         <h1 className="text-3xl font-extrabold text-center">RealT</h1>
-                        {/* <div className="flex gap-3">
-                            <span className="w-12 h-12 rounded-full border border-white flex items-center justify-center
-                                                text-2xl">
-                                {username && username[0]}
-                            </span>
-                            <div className="w-32">
-                                <h3 className="text-xl font-medium">{username}</h3>
-                                <span className="">{id}</span>
-                            </div>
-                        </div> */}
                     </div>
                     <p className="text-xs italic font-semibold tracking-wider px-3">Participants</p>
                     <div className="px-3 py-3 overflow-x-hidden overflow-y-auto h-full
@@ -139,7 +129,6 @@ export default function editor() {
                     </div>
                 </div>
 
-                {/**----------------EDITOR SIDE--------------*/}
                 <div className="Right w-full h-full p-4">
                     <Editor 
                         socketRef={socketRef} 
