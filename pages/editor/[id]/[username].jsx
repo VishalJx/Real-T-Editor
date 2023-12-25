@@ -85,6 +85,7 @@ export default function editor() {
         }
         catch(err){
             errorToast('Failed to copy room ID');
+            console.log("------------failed-------------")
         }
     }
 

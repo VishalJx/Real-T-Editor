@@ -5,7 +5,6 @@ const Editor = ({ socketRef, roomId, onCodeChange }) => {
   const textareaRef = useRef(null);
 
   useEffect(() => {
-    const init = async () => {
       textareaRef.current = document.getElementById('editor');
 
       textareaRef.current.addEventListener('input', handleInputChange);
@@ -18,11 +17,8 @@ const Editor = ({ socketRef, roomId, onCodeChange }) => {
           roomId,
           code,
         });
-      }
 
     };
-
-    init();
 
   }, [roomId, socketRef]);
 
